@@ -46,6 +46,9 @@ class App extends Component {
         </header>
         <br/>
         <GalleryList galleryList={this.state.galleryList}/>
+        <footer>
+          <p>Thanks for checking out my gallery!</p>
+        </footer>
       </div>
     );
   }

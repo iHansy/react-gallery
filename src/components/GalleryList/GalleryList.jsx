@@ -5,11 +5,9 @@ class GalleryList extends Component {
     render() {
         return (
             <>
-                <p>GalleryList</p>
-                <GalleryItem />
                 {this.props.galleryList.map((picture) => {
                     return (
-                        <GalleryItem key={picture.id}/>
+                        <GalleryItem key={picture.id} picture={picture}/>
                     )
                 })}
             </>
