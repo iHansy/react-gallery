@@ -11,6 +11,7 @@ class GalleryList extends Component {
                         key={picture.id} 
                         picture={picture}
                         showDescription={this.props.showDescription}
+                        addLike={this.props.addLike}
                         />
                     )
                 })}
