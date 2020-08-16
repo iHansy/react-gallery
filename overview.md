@@ -12,5 +12,5 @@
 
 
 
-
+{} Styling, flex box?
 {} Create project description in README.md
