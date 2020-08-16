@@ -30,7 +30,6 @@
 
 .mainDescription {
   background-color: cyan;
-  width: 350px;
   border: 5px solid cyan;
   margin: 5px;
   border-radius: 10px;
@@ -49,4 +48,8 @@ footer {
   margin-top: 20px;
   padding: 1px;
   color: white;
+}
+
+.likeBtn {
+  display: block;
 }
