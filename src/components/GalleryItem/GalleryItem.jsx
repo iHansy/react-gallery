@@ -17,9 +17,9 @@ class GalleryItem extends Component {
 
     render() {
         return (
-            <div>
+            <div className="mainPictures">
                 {this.state.onPicture ? <img src={this.props.picture.path} onClick={this.toggleDescription}/> 
-                : <p onClick={this.toggleDescription}>{this.props.picture.description}</p>}
+                : <span class="mainDescription" onClick={this.toggleDescription}>{this.props.picture.description}</span>}
             </div>
         )
     }
