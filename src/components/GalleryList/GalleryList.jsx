@@ -7,6 +7,11 @@ class GalleryList extends Component {
             <>
                 <p>GalleryList</p>
                 <GalleryItem />
+                {this.props.galleryList.map((picture) => {
+                    return (
+                        <GalleryItem key={picture.id}/>
+                    )
+                })}
             </>
         )
     }
