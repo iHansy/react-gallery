@@ -31,6 +31,11 @@ class App extends Component {
     })
   }
 
+  showDescription = (description) => {
+    console.log(`Showing description:`, description);
+    
+  }
+
 
 
 
@@ -45,7 +50,10 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br/>
-        <GalleryList galleryList={this.state.galleryList}/>
+        <GalleryList 
+        galleryList={this.state.galleryList}
+        showDescription={this.showDescription} //sending functionality to grandchild
+        />
         <footer>
           <p>Thanks for checking out my gallery!</p>
         </footer>

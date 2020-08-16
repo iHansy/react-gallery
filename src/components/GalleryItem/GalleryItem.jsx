@@ -7,7 +7,7 @@ class GalleryItem extends Component {
 
     render() {
         return (
-            <img src={this.props.picture.path} />
+            <img src={this.props.picture.path} onClick={(event) => this.props.showDescription(this.props.picture.description)} />
         )
     }
 }
