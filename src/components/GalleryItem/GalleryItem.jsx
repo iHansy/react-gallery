@@ -20,8 +20,8 @@ class GalleryItem extends Component {
             <>
                 <div className="mainPictures">
                     {this.state.onPicture ? <img src={this.props.picture.path} alt="" onClick={this.toggleDescription} />
-                    : <p className="mainDescription" onClick={this.toggleDescription}>{this.props.picture.description}</p>}
-                    <div class="flexy">
+                    : <div className="descriptionDiv"><p className="description" onClick={this.toggleDescription}>{this.props.picture.description}</p></div>}
+                    <div className="flexy">
                         <button className="likeBtn" onClick={(event) => this.props.addLike(this.props.picture)}>Like Photo</button>
                         <p className="likePTag">Likes: {this.props.picture.likes}</p>
                     </div>
